@@ -52,7 +52,7 @@ MongoDB, Elasticsearch, CouchDB
     - MongoDB: consistency is by default
       also MongoDB can support other guarantees, which are depends on database/driver configuration
 
-Ex: search for large, weakly structured logs
+Ex: search for large, weakly structured logs, hierarchical aggregation, product catalog in e-commerce systems, storing comments in CMS
 
 #### Column-oriented (BigTable like)
 Apache HBase, Cassandra
@@ -71,6 +71,10 @@ Vertica, Druid
     Vertica: consistency and availability
 
 Ex: real-time reports for millions of sites in Google Analytics
+
+### Some about CAP
+"Visual Guide to NoSQL System" [2]
+￼![CAP taken from http://blog.nahurst.com/visual-guide-to-nosql-systems](./CAP.png)
 
 
 ### References:
