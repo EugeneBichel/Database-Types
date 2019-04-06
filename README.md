@@ -2,12 +2,18 @@
 
 The choice of a database for storing data depends on the specific nature of the problem being solved.
 
-Database type | Relation DBs| Key-value DBs | Documented-oriented DBs | Column-Oriented DBs | Graph
+#### Data nature
+Data nature \ Database type | Relation DBs| Key-value DBs | Documented-oriented DBs | Column-Oriented DBs | Graph
 :---:  | :---:  | :---:  |:---: |:---: |:---:
 Example | PostgreSQL, MySQL, etc | Redis, etc | MongoDB, Elasticsearch, CouchDB, etc | Apache HBase, Cassandra, etc | Neo4j, etc
 Data nature |Structured data; <br/> transactions |grouped values by key|semi-structured| Quick access for individual rows by key combined with the ability to use batch approach for big data processing; <br/> There is a requirement to integrate with Big Data, Hadoop, Hive and Spark; <br/> You don't require the ACID properties from your DB. | "Unlike other databases, relationships take first priority in graph databases."[6]
-Support ACID|YES|NO|NO|NO|YES
 
+#### ACID
+Database|Relation DBs|Graph-oriented DBS [11]|CouchDB (Documented-oriented)|DynamoDB| MongoDB [10]
+:---:  | :---:  | :---: | :---:  | :---: | :---: |
+Support ACID|YES|YES|YES|YES|YES
+
+#### CAP
 Database type \ CAP|CA|AP|CP
 :---:|:---:|:---:|:---:|
 Relational|PostgreSQL <br/> MySQL| | |
@@ -112,3 +118,5 @@ Be careful with the following diagram. Please read comments in [2]
 - [7] [Comparison of the Open Source OLAP Systems for Big Data: ClickHouse, Druid and Pinot](https://medium.com/@leventov/comparison-of-the-open-source-olap-systems-for-big-data-clickhouse-druid-and-pinot-8e042a5ed1c7)
 - [8] https://stackoverflow.com/questions/11292215/where-does-mongodb-stand-in-the-cap-theorem
 - [9] https://aphyr.com/posts/322-call-me-maybe-mongodb-stale-reads
+- [10] https://www.mongodb.com/blog/post/multi-document-transactions
+- [11] https://martinfowler.com/articles/nosqlKeyPoints.html
