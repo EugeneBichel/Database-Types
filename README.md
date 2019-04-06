@@ -55,6 +55,12 @@ PostgreSQL, MySQL, etc
 Ex: storage of financial information
 
 ### Non-Relation DBs
+ - Aggregate-oriented databases
+    - Document-based NoSQL databases (e.g. MongoDB, CouchDB)
+    - Key/Value NoSQL databases (e.g. Redis)
+    - Column family NoSQL databases (e.g. Hibase, Cassandra)
+ - Graph-oriented databases (e.g. Neo4J)
+
 #### Key-value
 Redis, etc
 
@@ -100,7 +106,7 @@ Vertica, Druid, ClickHouse
 
 Ex: real-time reports for millions of sites in Google Analytics
 
-### Some about CAP
+### CAP triangle
 Be careful with the following diagram. Please read comments in [2]
 
 "Visual Guide to NoSQL System" [2]
