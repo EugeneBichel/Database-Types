@@ -1,6 +1,6 @@
 ## Database Types
 
-The choice of a database for storing data depends on the specific nature of the problem being solved.
+"The choice of a database for storing data depends on the specific nature of the problem being solved."[12]
 
 #### Data nature
 Data nature \ Database type | Relation DBs| Key-value DBs | Documented-oriented DBs | Column-Oriented DBs | Graph
@@ -126,3 +126,4 @@ Be careful with the following diagram. Please read comments in [2]
 - [9] https://aphyr.com/posts/322-call-me-maybe-mongodb-stale-reads
 - [10] https://www.mongodb.com/blog/post/multi-document-transactions
 - [11] https://martinfowler.com/articles/nosqlKeyPoints.html
+- [12] https://www.coursera.org/learn/real-time-streaming-big-data
