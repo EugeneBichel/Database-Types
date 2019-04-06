@@ -106,7 +106,7 @@ Vertica, Druid, ClickHouse
 
 Ex: real-time reports for millions of sites in Google Analytics
 
-### CAP triangle
+### CAP triangle taken from [2]
 Be careful with the following diagram. Please read comments in [2]
 
 "Visual Guide to NoSQL System" [2]
