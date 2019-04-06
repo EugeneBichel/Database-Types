@@ -11,7 +11,7 @@ Data nature |Structured data <br/> transactions |grouped values by key|semi-stru
 #### ACID
 Database|Relation DBs|Graph-oriented DBS [11]|CouchDB (Documented-oriented)|DynamoDB| MongoDB [10]
 :---:  | :---:  | :---: | :---:  | :---: | :---: |
-Support ACID|YES|YES|YES|YES|YES
+ACID supporting|YES|YES|YES|YES|YES
 
 #### CAP
 Database type \ CAP|CA|AP|CP
