@@ -5,8 +5,8 @@
 #### Data nature
 Data nature \ Database type | Relation DBs| Key-value DBs | Documented-oriented DBs | Column-Oriented DBs | Graph
 :---:  | :---:  | :---:  |:---: |:---: |:---:
-Example | PostgreSQL, MySQL, etc | Redis, etc | MongoDB, Elasticsearch, CouchDB, etc | Apache HBase, Cassandra, etc | Neo4j, etc
-Data nature |Structured data; <br/> transactions |grouped values by key|semi-structured| Quick access for individual rows by key combined with the ability to use batch approach for big data processing; <br/> There is a requirement to integrate with Big Data, Hadoop, Hive and Spark; <br/> You don't require the ACID properties from your DB. | "Unlike other databases, relationships take first priority in graph databases."[6]
+Example | PostgreSQL <br/> MySQL | Redis | MongoDB <br/> Elasticsearch <br/> CouchDB | Apache HBase <br/> Cassandra | Neo4j
+Data nature |Structured data <br/> transactions |grouped values by key|semi-structured| Quick access for individual rows by key combined with the ability to use batch approach for big data processing <br/><br/> There is a requirement to integrate with Big Data, Hadoop, Hive and Spark <br/><br/> You don't require the ACID properties from your DB. | "Unlike other databases, relationships take first priority in graph databases."[6]
 
 #### ACID
 Database|Relation DBs|Graph-oriented DBS [11]|CouchDB (Documented-oriented)|DynamoDB| MongoDB [10]
