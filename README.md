@@ -2,6 +2,13 @@
 
 The choice of a database for storing data depends on the specific nature of the problem being solved.
 
+Database type | Relation DBs| Key-value DBs | Documented-oriented DBs | Column-Oriented DBs | Graph
+--- | --- | --- | --- |--- |---
+Example | PostgreSQL, MySQL, etc | Redis, etc | MongoDB, Elasticsearch, CouchDB, etc | Apache HBase, Cassandra, etc | Neo4j, etc
+Data nature |Structured data|grouped values by key|semi-structured| Quick access for individual rows by key combined with the ability to use batch approach for big data processing | "Unlike other databases, relationships take first priority in graph databases."[6]
+Data nature |transactions| --- | --- |--- |---
+
+
 ### Keep thoughts about
 - CAP guarantees if looks at distributed computing ("a shared-data system can have at most two of the three following properties: Consistency, Availability, and tolerance to network Partitions"[3])
     - C - consistency: "all clients always have the same view of the data"[2]
@@ -25,8 +32,8 @@ The choice of a database for storing data depends on the specific nature of the 
     - grouped small groups of data by key
     - availability fast scan
 
-### Relation DB
-PostgreSQL, MySQL
+### Relation DBs
+PostgreSQL, MySQL, etc
 
 - Stores the structured information in a normalized form
 - Transactions support
@@ -34,9 +41,9 @@ PostgreSQL, MySQL
 
 Ex: storage of financial information
 
-### Non-Relation DB
+### Non-Relation DBs
 #### Key-value
-Redis
+Redis, etc
 
 - Obtain a small amount of information by key
 - CAP
@@ -44,8 +51,8 @@ Redis
 
 Ex: storage of users profile
 
-#### Documented-oriented DB
-MongoDB, Elasticsearch, CouchDB
+#### Documented-oriented DBs
+MongoDB, Elasticsearch, CouchDB, etc
 
 - Storage semi-structured data
 - CAP
@@ -55,7 +62,7 @@ MongoDB, Elasticsearch, CouchDB
 Ex: search for large, weakly structured logs, hierarchical aggregation, product catalog in e-commerce systems, storing comments in CMS
 
 #### Column-oriented (BigTable like)
-Apache HBase, Cassandra
+Apache HBase, Cassandra, etc
 
 - Quick access for individual rows by key combined with the ability to use batch approach for big data processing
 - CAP
@@ -63,8 +70,16 @@ Apache HBase, Cassandra
 
 Ex: Storage of features for machine learning
 
+#### Graph DBs
+Neo4j
+
+- "Unlike other databases, relationships take first priority in graph databases."[6]
+- CAP: consistency and availability
+
+Ex: system of roads, network of devices, knowledge graph, social media
+
 #### OLAP
-Vertica, Druid
+Vertica, Druid, ClickHouse
 
 - Fast full data scan to build reports in unpredictable slices
 - CAP
@@ -73,7 +88,10 @@ Vertica, Druid
 Ex: real-time reports for millions of sites in Google Analytics
 
 ### Some about CAP
+Be careful with the following diagram. Please read comments in [2]
+
 "Visual Guide to NoSQL System" [2]
+
 ￼![CAP taken from http://blog.nahurst.com/visual-guide-to-nosql-systems](./CAP.png)
 
 
@@ -83,3 +101,5 @@ Ex: real-time reports for millions of sites in Google Analytics
 - [3] [You Can’t Sacrifice Partition Tolerance](https://codahale.com/you-cant-sacrifice-partition-tolerance/)
 - [4] [MongoDB Use Cases](https://docs.mongodb.com/ecosystem/use-cases/)
 - [5] [Gilbert and Lynch. Brewer’s conjecture and the feasibility of consistent, available, partition-tolerant web services.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.67.6951&rep=rep1&type=pdf)
+- [6] [What is a Graph Database?](https://neo4j.com/why-graph-databases/)
+- [7] [Comparison of the Open Source OLAP Systems for Big Data: ClickHouse, Druid and Pinot](https://medium.com/@leventov/comparison-of-the-open-source-olap-systems-for-big-data-clickhouse-druid-and-pinot-8e042a5ed1c7)
