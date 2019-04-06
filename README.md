@@ -9,7 +9,7 @@ Example | PostgreSQL <br/> MySQL | Redis | MongoDB <br/> Elasticsearch <br/> Cou
 Data nature |Structured data <br/> transactions |grouped values by key|semi-structured| Quick access for individual rows by key combined with the ability to use batch approach for big data processing <br/><br/> There is a requirement to integrate with Big Data, Hadoop, Hive and Spark <br/><br/> You don't require the ACID properties from your DB. | "Unlike other databases, relationships take first priority in graph databases."[6]
 
 #### ACID
-Database|Relation DBs|Graph-oriented DBS [11]|CouchDB (Documented-oriented)|DynamoDB| MongoDB [10]
+Database|Relation|Graph-oriented [11]|CouchDB (Documented-oriented)|DynamoDB| MongoDB [10]
 :---:  | :---:  | :---: | :---:  | :---: | :---: |
 ACID supporting|YES|YES|YES|YES|YES
 
