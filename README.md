@@ -2,6 +2,17 @@
 
 "The choice of a database for storing data depends on the specific nature of the problem being solved."[12]
 
+[12]:
+Relational Databases | NoSQL Databases
+:---:  | :---:  |
+Work on one machine | Horizontal scalability
+Terabytes of data | Petabytes of data
+Relational data model | No single data model
+SQL language | No Standard access method
+JOIN/GROUP BY | No efficient support
+Transactions | Limited or no transactions
+Consistent (ACID) | Eventual consistency (BASE)
+
 #### Data nature
 Data nature \ Database type | Relation DBs| Key-value DBs | Documented-oriented DBs | Column-Oriented DBs | Graph
 :---:  | :---:  | :---:  |:---: |:---: |:---:
