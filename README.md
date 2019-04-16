@@ -34,10 +34,10 @@ Document-oriented| MongoDB (No partition) |MongoDB (partition, majority connecte
 Column-oriented|Vertica|Cassandra|Cassandra <br /> HBase|
 Graph|Neo4j| | |
 
-### Use Cases
-Database | Use cases
-:---:|:---:|
-Redis|Session cache <br/> Page caching <br/> Support application internal mechanisms <ul><li>distributes locks</li><li>task queue</li><li>LRU cache</li></ul> <br/> Counting <ul> <li> leaderboards </li> <li> number of unique values in a period </li> </ul> <br/> keeping real-time statistics 
+### Use Cases (about Redis taken from [12])
+Database | Use cases | Not to use
+:---:|:---:|:---:|
+Redis|Session cache <br/> Page caching <br/> Support application internal mechanisms <ul><li>distributes locks</li><li>task queue</li><li>LRU cache</li></ul> <br/> Counting <ul> <li> leaderboards </li> <li> number of unique values in a period </li> </ul> <br/> keeping real-time statistics | query data with SQL-like languages <br/> secondary indices <br/> RDBMS-like data types <br/> a scalable data store <br/> strong consistency
 
 Some NoSQL databases can be key-value and document-oriented as Couchbase
 
