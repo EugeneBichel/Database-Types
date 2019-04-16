@@ -2,9 +2,8 @@
 
 "The choice of a database for storing data depends on the specific nature of the problem being solved."[12]
 
-The following data is taken from [12]:
-
-Relational Databases | NoSQL Databases
+#### Relation dbs vs NoSQL dbs (The following data for the table is taken from [12])
+Relation Databases | NoSQL Databases
 :---: | :---: 
 Work on one machine | Horizontal scalability
 Terabytes of data | Petabytes of data
@@ -38,6 +37,8 @@ Graph|Neo4j| | |
 Database | Use cases | Not to use
 :---:|:---:|:---:|
 Redis|Session cache <br/> Page caching <br/> Support application internal mechanisms <ul><li>distributes locks</li><li>task queue</li><li>LRU cache</li></ul> <br/> Counting <ul> <li> leaderboards </li> <li> number of unique values in a period </li> </ul> <br/> keeping real-time statistics | query data with SQL-like languages <br/> secondary indices <br/> RDBMS-like data types <br/> a scalable data store <br/> strong consistency
+
+### Secondary indices
 
 Some NoSQL databases can be key-value and document-oriented as Couchbase
 
