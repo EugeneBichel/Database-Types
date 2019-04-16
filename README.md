@@ -2,9 +2,10 @@
 
 "The choice of a database for storing data depends on the specific nature of the problem being solved."[12]
 
-[12]:
+The following data is taken from [12]:
+
 Relational Databases | NoSQL Databases
-:---:  | :---:  |
+:---: | :---: 
 Work on one machine | Horizontal scalability
 Terabytes of data | Petabytes of data
 Relational data model | No single data model
