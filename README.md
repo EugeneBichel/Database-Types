@@ -36,7 +36,7 @@ Graph|Neo4j| | |
 
 Some NoSQL databases can be key-value and document-oriented as Couchbase
 
-##### what is difference between Key-value and document-oriented databases [13]:
+##### What to choose: ether key-value or document-oriented databases? [13]:
  "The fundamental difference is that a pure key-value database doesn’t understand what’s stored in the value and limits developers to a simple interface of SETS and GETS, while a document database understands the format in which documents are stored and can therefore provide richer functionality for developers, such as access to documents through queries.
  
  It’s probably not surprising that pure key-value and document databases have evolved quite differently during the early years of the NoSQL industry. Since the development environment of a pure key-value database is by its nature very limited, developers of pure key-value databases have focused their resources on easy scalability, high performance, and reliability at scale. On the other hand, developers of document databases have generally focused their resources on building a rich developer environment with oodles of features but are often criticized for poor scalability, performance, and reliability at scale.
