@@ -34,6 +34,11 @@ Document-oriented| MongoDB (No partition) |MongoDB (partition, majority connecte
 Column-oriented|Vertica|Cassandra|Cassandra <br /> HBase|
 Graph|Neo4j| | |
 
+### Use Cases
+Database | Use cases
+:---:|:---:|
+Redis|Session cache <br/> Page caching <br/> Support application internal mechanisms <ul><li>distributes locks</li><li>task queue</li><li>LRU cache</li></ul> <br/> Counting <ul> <li> leaderboards </li> <li> number of unique values in a period </li> </ul> <br/> keeping real-time statistics 
+
 Some NoSQL databases can be key-value and document-oriented as Couchbase
 
 ##### What to choose: ether key-value or document-oriented databases? [13]:
