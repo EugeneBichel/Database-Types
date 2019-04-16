@@ -17,10 +17,12 @@ ACID supporting|YES|YES|YES|YES|YES
 Database type \ CAP|CA|AP|CP
 :---:|:---:|:---:|:---:|
 Relational|PostgreSQL <br/> MySQL| | |
-Key-value| |Redis | |
-Document-oriented| MongoDB (No partition) |MongoDB (partition, majority connected) <br/> Riak|MongoDB (partition, majority not connected) <br/> Terrastore(default config) <br/> SimpleDB|
-Column-oriented|Vertica|Cassandra|HBase|
+Key-value| |Redis | Couchbase |
+Document-oriented| MongoDB (No partition) |MongoDB (partition, majority connected) <br/> Riak|MongoDB (partition, majority not connected) <br/> Terrastore(default config) <br/> SimpleDB <br/> Couchbase|
+Column-oriented|Vertica|Cassandra|Cassandra <br /> HBase|
 Graph|Neo4j| | |
+
+Some NoSQL databases can be key-value and document-oriented as Couchbase
 
 ### Keep thoughts about
 - CAP guarantees if looks at distributed computing ("a shared-data system can have at most two of the three following properties: Consistency, Availability, and tolerance to network Partitions"[3])
